@@ -5,6 +5,8 @@
   <head>
     <title>Random Number Generator</title>
     <link href="style.css" rel="stylesheet"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
   </head>
 
   <body>
@@ -12,18 +14,18 @@
       <h1 class = "title">RANDOM NUMBER GENERATOR</h1>
       <form action="index.html" method="GET" onsubmit="collectingInput(event)">
         <section class ="input">
-          <label for="diceNumber">How many dice do you want to roll?</label>
+          <label for="diceNumber" >How many dice do you want to roll (max. 4)?: </label>
           <br>
-          <input type = "number" id="diceNumber" name="diceNumber" max="4" min="1" value="">
+          <input type = "number" id="diceNumber" name="diceNumber" max="4" min="1" value="1">
           <br>
           <label for="diceType">What type of dice do you want to roll?</label>
           <br>
           <input type="radio" name="diceType" id="d4" value="4" checked>
-          <label for="4">4 sides dice</label>
+          <label for="d4">4 sides dice</label>
           <input type="radio" name="diceType" id="d6" value="6">
-          <label for="6">6 sides dice</label>
+          <label for="d6">6 sides dice</label>
           <input type="radio" name="diceType" id="d8" value="8">
-          <label for="8">8 sides dice</label>
+          <label for="d8">8 sides dice</label>
           <br>
           <input type="radio" name="diceType" id="d10" value="10">
           <label for="d10">10 sides dice</label>
@@ -36,13 +38,14 @@
         <input type="submit" value="THROW THE DICE">
       </section>
       <section class = "output">
-        <section class="diceNumbers">
-          <h3 id ="dice1"></h3>
-          <h3 id ="dice2"></h3>
-          <h3 id ="dice3"></h3>
-          <h3 id ="dice4"></h3>
-          <h2 id="randomNumber"></h2>
+        <section class="diceOutput">
+          <h3 id ="dice1">?</h3>
+          <h3 id ="dice2">?</h3>
+          <h3 id ="dice3">?</h3>
+          <h3 id ="dice4">?</h3>
         </section>
+        <h2>SOLUTION:</h2>
+        <h2 id="randomNumber">?</h2>
       </section>
     </form>
 

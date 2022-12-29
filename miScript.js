@@ -32,28 +32,28 @@ function collectingInput(event) {
 
   switch (diceNumber){
     case "1":
-      dice1.style.display= "block";
+      dice1.style.display= "flex";
       dice2.style.display= "none";
       dice3.style.display= "none";
       dice4.style.display= "none";
       break;
     case "2":
-      dice1.style.display= "block";
-      dice2.style.display= "block";
+      dice1.style.display= "flex";
+      dice2.style.display= "flex";
       dice3.style.display= "none";
       dice4.style.display= "none";
       break;
     case "3":
-      dice1.style.display= "block";
-      dice2.style.display= "block";
-      dice3.style.display= "block";
+      dice1.style.display= "flex";
+      dice2.style.display= "flex";
+      dice3.style.display= "flex";
       dice4.style.display= "none";
       break;
     case "4":
-      dice1.style.display= "block";
-      dice2.style.display= "block";
-      dice3.style.display= "block";
-      dice4.style.display= "block";
+      dice1.style.display= "flex";
+      dice2.style.display= "flex";
+      dice3.style.display= "flex";
+      dice4.style.display= "flex";
       break;
           }
 }
