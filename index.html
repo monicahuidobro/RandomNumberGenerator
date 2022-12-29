@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<html>
+
+  <head>
+    <title>Random Number Generator</title>
+    <link href="style.css" rel="stylesheet"/>
+  </head>
+
+  <body>
+    <section class = "content">
+      <h1 class = "title">RANDOM NUMBER GENERATOR</h1>
+      <form action="index.html" method="GET" onsubmit="collectingInput(event)">
+        <section class ="input">
+          <label for="diceNumber">How many dice do you want to roll?</label>
+          <br>
+          <input type = "number" id="diceNumber" name="diceNumber" max="4" min="1" value="">
+          <br>
+          <label for="diceType">What type of dice do you want to roll?</label>
+          <br>
+          <input type="radio" name="diceType" id="d4" value="4" checked>
+          <label for="4">4 sides dice</label>
+          <input type="radio" name="diceType" id="d6" value="6">
+          <label for="6">6 sides dice</label>
+          <input type="radio" name="diceType" id="d8" value="8">
+          <label for="8">8 sides dice</label>
+          <br>
+          <input type="radio" name="diceType" id="d10" value="10">
+          <label for="d10">10 sides dice</label>
+          <input type="radio" name="diceType" id="d12" value="12">
+          <label for="d12">12 sides dice</label>
+          <input type="radio" name="diceType" id="d20" value="20">
+          <label for="d20">20 sides dice</label>
+        </section>
+        <br>
+        <input type="submit" value="THROW THE DICE">
+      </section>
+      <section class = "output">
+        <section class="diceNumbers">
+          <h3 id ="dice1"></h3>
+          <h3 id ="dice2"></h3>
+          <h3 id ="dice3"></h3>
+          <h3 id ="dice4"></h3>
+          <h2 id="randomNumber"></h2>
+        </section>
+      </section>
+    </form>
+
+    </section>
+
+    <script src="miScript.js"></script>
+  </body>
+
+</html>
