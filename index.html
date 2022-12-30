@@ -10,47 +10,86 @@
   </head>
 
   <body>
-    <section class = "content">
       <h1 class = "title">RANDOM NUMBER GENERATOR</h1>
-      <form action="index.html" method="GET" onsubmit="collectingInput(event)">
-        <section class ="input">
-          <label for="diceNumber" >How many dice do you want to roll (max. 4)?: </label>
-          <br>
-          <input type = "number" id="diceNumber" name="diceNumber" max="4" min="1" value="1">
-          <br>
-          <label for="diceType">What type of dice do you want to roll?</label>
-          <br>
-          <input type="radio" name="diceType" id="d4" value="4" checked>
-          <label for="d4">4 sides dice</label>
-          <input type="radio" name="diceType" id="d6" value="6">
-          <label for="d6">6 sides dice</label>
-          <input type="radio" name="diceType" id="d8" value="8">
-          <label for="d8">8 sides dice</label>
-          <br>
-          <input type="radio" name="diceType" id="d10" value="10">
-          <label for="d10">10 sides dice</label>
-          <input type="radio" name="diceType" id="d12" value="12">
-          <label for="d12">12 sides dice</label>
-          <input type="radio" name="diceType" id="d20" value="20">
-          <label for="d20">20 sides dice</label>
+      <section class = "content">
+        <section class ="player1" id="player1">
+          <h2>PLAYER 1:</h2>
+          <form action="index.html" method="GET" onsubmit="collectingInput1(event)">
+            <label for="diceNumber1" >How many dice do you want to roll (max. 4)?: </label>
+            <br>
+            <input type = "number" id="diceNumber1" name="diceNumber1" max="4" min="1" value="1">
+            <br>
+            <label for="diceType1">What type of dice do you want to roll?</label>
+            <br>
+            <input type="radio" name="diceType1" id="d4" value="4" checked>
+            <label for="d4">4 sides dice</label>
+            <input type="radio" name="diceType1" id="d6" value="6">
+            <label for="d6">6 sides dice</label>
+            <input type="radio" name="diceType1" id="d8" value="8">
+            <label for="d8">8 sides dice</label>
+            <br>
+            <input type="radio" name="diceType1" id="d10" value="10">
+            <label for="d10">10 sides dice</label>
+            <input type="radio" name="diceType1" id="d12" value="12">
+            <label for="d12">12 sides dice</label>
+            <input type="radio" name="diceType1" id="d20" value="20">
+            <label for="d20">20 sides dice</label>
+            <br>
+            <input type="submit" value="THROW THE DICE" id="button1"> 
+          </form>
+          <section class="diceOutput1">
+            <h3 id ="dice1-1">?</h3>
+            <h3 id ="dice2-1">?</h3>
+            <h3 id ="dice3-1">?</h3>
+            <h3 id ="dice4-1">?</h3>
+          </section>
+          <section class="solution1">
+            <h2>SOLUTION 1:</h2>
+            <h3 id="randomNumber1">?</h3>
+          </section>
         </section>
-        <br>
-        <input type="submit" value="THROW THE DICE">
-      </section>
-      <section class = "output">
-        <section class="diceOutput">
-          <h3 id ="dice1">?</h3>
-          <h3 id ="dice2">?</h3>
-          <h3 id ="dice3">?</h3>
-          <h3 id ="dice4">?</h3>
+        <section class="output">
+          <button id="solve">WINNER</button>
+          <h2 id="winner">?</h2>
+          <button id="restart">PLAY AGAIN</button>
         </section>
-        <h2>SOLUTION:</h2>
-        <h2 id="randomNumber">?</h2>
+        <section class ="player2" id="player2">
+          <h2>PLAYER 2:</h2>
+          <form action="index.html" method="GET" onsubmit="collectingInput2(event)">
+            <label for="diceNumber2" >How many dice do you want to roll (max. 4)?: </label>
+            <br>
+            <input type = "number" id="diceNumber2" name="diceNumber2" max="4" min="1" value="1">
+            <br>
+            <label for="diceType2">What type of dice do you want to roll?</label>
+            <br>
+            <input type="radio" name="diceType2" id="d4" value="4" checked>
+            <label for="d4">4 sides dice</label>
+            <input type="radio" name="diceType2" id="d6" value="6">
+            <label for="d6">6 sides dice</label>
+            <input type="radio" name="diceType2" id="d8" value="8">
+            <label for="d8">8 sides dice</label>
+            <br>
+            <input type="radio" name="diceType2" id="d10" value="10">
+            <label for="d10">10 sides dice</label>
+            <input type="radio" name="diceType2" id="d12" value="12">
+            <label for="d12">12 sides dice</label>
+            <input type="radio" name="diceType2" id="d20" value="20">
+            <label for="d20">20 sides dice</label>
+            <br>
+            <input type="submit" value="THROW THE DICE" id="button2">
+          </form>
+          <section class="diceOutput2">
+            <h3 id ="dice1-2">?</h3>
+            <h3 id ="dice2-2">?</h3>
+            <h3 id ="dice3-2">?</h3>
+            <h3 id ="dice4-2">?</h3>
+          </section>
+          <section class="solution2">
+            <h2>SOLUTION 2:</h2>
+            <h3 id="randomNumber2">?</h3>
+          </section>
+        </section>
       </section>
-    </form>
-
-    </section>
-
     <script src="miScript.js"></script>
   </body>
 

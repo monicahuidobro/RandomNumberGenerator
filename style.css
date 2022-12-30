@@ -2,28 +2,66 @@ body {
   font-family: "Dancing Script", cursive;
   text-align: center;
   font-size: 1.5rem;
+  justify-content: center;
 }
 
-.diceOutput {
+.content {
   display: inline-flex;
-  width: 500px;
-  justify-content: space-around;
+  width: auto;
+  justify-content: center;
 }
 
-#dice1,
-#dice2,
-#dice3,
-#dice4 {
-  display: flex;
+.output {
+  align-self: center;
+  width: 200px;
   border: 1px solid black;
+  border-radius: 10px;
+  box-sizing: border-box;
+  padding-top: 20px;
+}
+
+.player1,
+.player2 {
+  line-height: 3rem;
+  margin: 0px 50px;
+  background-color: white;
+  border-radius: 10%;
+}
+
+.diceOutput1,
+.diceOutput2 {
+  display: inline-flex;
+  margin-top: 20px;
+}
+
+#dice2-1,
+#dice3-1,
+#dice4-1,
+#dice2-2,
+#dice3-2,
+#dice4-2 {
+  box-sizing: border-box;
   width: 50px;
   height: 50px;
-  align-items: center;
+  margin: 20px 20px;
+  border: 1px solid black;
   justify-content: center;
-  align-content: center;
+  border-radius: 10%;
+  display: none;
+  background-color: white;
 }
-.input {
-  line-height: 3rem;
+
+#dice1-1,
+#dice1-2 {
+  box-sizing: border-box;
+  width: 50px;
+  height: 50px;
+  margin: 20px 20px;
+  border: 1px solid black;
+  justify-content: center;
+  border-radius: 10%;
+  display: flex;
+  background-color: white;
 }
 
 input[type="number"] {
@@ -34,7 +72,12 @@ input[type="number"] {
   border: none;
 }
 
-input[type="submit"] {
+#restart {
+  margin-bottom: 20px;
+}
+
+input[type="submit"],
+button {
   font-family: "Dancing Script", cursive;
   text-align: center;
   font-size: 1rem;
@@ -42,13 +85,6 @@ input[type="submit"] {
   width: auto;
   height: auto;
   padding: 10px;
-}
-
-label[for="diceNumber"] {
-  font-weight: bold;
-}
-label[for="diceType"] {
-  font-weight: bold;
 }
 
 label[for="d4"],
